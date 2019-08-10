@@ -29,7 +29,7 @@ vows.describe('portfinder').addBatch({
         topic: function () {
           portfinder.getPorts(3, this.callback);
         },
-        "should respond with the three distinct available ports (>= 32773)": function (err, ports) {
+        "should respond with three distinct available ports (>= 32773)": function (err, ports) {
           if (err) { debugVows(err); }
           assert.isTrue(!err);
           var seen = new Set()
@@ -56,7 +56,7 @@ vows.describe('portfinder').addBatch({
         topic: function () {
           portfinder.getPorts(3, this.callback);
         },
-        "should respond with the three distinct available ports (>= 32768)": function (err, ports) {
+        "should respond with three distinct available ports (>= 32768)": function (err, ports) {
           if (err) { debugVows(err); }
           assert.isTrue(!err);
           var seen = new Set()
